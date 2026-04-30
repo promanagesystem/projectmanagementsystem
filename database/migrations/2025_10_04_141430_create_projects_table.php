@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('name');
             $table->string('client');
             $table->text('description')->nullable();
-            $table->string('nilai_budget')->nullable();
+            $table->float('nilai_budget')->nullable();
             $table->date('start_date');
             $table->date('end_date');
             $table->enum('status', ['planning', 'in_progress', 'completed', 'on_hold'])->default('planning');
